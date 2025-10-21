@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+# Green Week - Săptămâna Verde
 
-## Project info
+This is a modern, interactive web application dedicated to promoting environmental activities and community clean-up initiatives during Green Week. The project represents a digital initiative for raising public awareness about environmental issues, providing educational resources, information about local events, and tools for active involvement in protecting the surrounding environment.
 
-**URL**: https://lovable.dev/projects/46083d10-bda8-41b7-889b-ad9ad9446c01
+**Live URL**: https://iam269.github.io/greenweek/
 
-## How can I edit this code?
+## Key Features
 
-There are several ways of editing your application.
+- **Hero Section**: Visually appealing presentation with representative images for environmental activities
+- **Activities**: Detailed information about community clean-up events and recycling programs
+- **Resources**: Guides and useful materials for recycling and waste reduction
+- **Practical Tips**: Recommendations for a sustainable lifestyle
+- **Photo Gallery**: Collection of images from previous events for inspiration
+- **Educational Videos**: Multimedia content for interactive learning
+- **Informative Footer**: Links to partner organizations and contact information
 
-**Use Lovable**
+## Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/46083d10-bda8-41b7-889b-ad9ad9446c01) and start prompting.
+The project is built using cutting-edge web technologies:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Vite**: Fast bundler for application development and build processes
+- **React**: JavaScript framework for creating dynamic user interfaces
+- **TypeScript**: JavaScript superset for static typing and safer development
+- **Tailwind CSS**: Utility-first CSS framework for rapid, responsive styling
+- **shadcn/ui**: Accessible and customizable UI components
+- **ESLint**: For ensuring code quality and consistency
 
-**Use your preferred IDE**
+## Local Installation and Development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+To run the project locally, follow these steps:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
+- Node.js (version 16 or later)
+- npm or yarn package manager
 
-Follow these steps:
+### Installation Steps
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/iam269/greenweek.git
+   cd greenweek
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+The application will be available at `http://localhost:5173/`.
+
+## Production Build
+
+To create an optimized production build:
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+Build files will be generated in the `dist/` directory.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+greenweek/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable React components
+│   │   ├── Activities.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Resources.jsx
+│   │   ├── Tips.jsx
+│   │   └── Videos.jsx
+│   ├── pages/              # Page components
+│   ├── hooks/              # Custom React hooks
+│   ├── assets/             # Images and media files
+│   ├── App.jsx             # Main application component
+│   └── main.jsx            # Application entry point
+├── package.json            # Project dependencies and scripts
+├── vite.config.js          # Vite configuration
+├── tailwind.config.js      # Tailwind CSS configuration
+└── README.md               # Project documentation
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contributing
 
-## What technologies are used for this project?
+Contributions are welcome! If you'd like to improve the project:
 
-This project is built with:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Environment Variables
 
-## How can I deploy this project?
+The application uses Google Analytics for tracking user interactions. The tracking ID is configured in the `index.html` file.
 
-Simply open [Lovable](https://lovable.dev/projects/46083d10-bda8-41b7-889b-ad9ad9446c01) and click on Share -> Publish.
+## Performance Optimization
 
-## Can I connect a custom domain to my Lovable project?
+- **Lazy Loading**: Components are loaded on-demand to improve initial load times
+- **Image Optimization**: Images are optimized for web delivery
+- **Code Splitting**: Application code is split into chunks for better caching
+- **Minification**: Production builds include minified CSS and JavaScript
 
-Yes, you can!
+## Browser Support
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The application supports all modern browsers:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## License
+
+This project is open-source and licensed under the MIT License.
+
+## Contact
+
+For questions or suggestions, please open an issue in the GitHub repository or contact the development team.
