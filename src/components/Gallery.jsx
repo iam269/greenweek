@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Image as ImageIcon } from "lucide-react";
+import { useAnalytics } from '../hooks/useAnalytics.js';
 import cleanUpGiveBack from "@/assets/Clean Up – Give Back (organizație).jpg";
 import cleanupsComing from "@/assets/Cleanups are coming (program comunitar).jpg";
 import earth5R from "@/assets/Earth5R – strategie de mobilizare voluntari pentru curățare.jpg";
@@ -9,6 +10,8 @@ import litterCleanUpPrograms from "@/assets/Litter Clean Up Programs.jpg";
 import pdxCommunityCleanup from "@/assets/PDX Community Cleanup & Recycling Event.jpg";
 
 const Gallery = () => {
+  const { trackInteraction } = useAnalytics();
+
   const images = [
     {
       src: cleanUpGiveBack,
@@ -60,12 +63,14 @@ const Gallery = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
+    trackInteraction('gallery_navigation', 'carousel', 'previous');
   };
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
+    trackInteraction('gallery_navigation', 'carousel', 'next');
   };
 
   return (
@@ -104,6 +109,7 @@ const Gallery = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
+                  onClick={() => trackInteraction('external_link_click', 'gallery', images[currentIndex].title)}
                 >
                   <h3 className="text-xl font-semibold text-white hover:text-primary transition-colors">
                     {images[currentIndex].title}

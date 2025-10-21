@@ -1,13 +1,18 @@
 import { Leaf } from "lucide-react";
 import { useState } from 'react';
+import { useAnalytics } from '../hooks/useAnalytics.js';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { trackInteraction } = useAnalytics();
 
   // Smooth scroll function pentru navigare
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: "smooth" });
+
+    // Track navigation clicks
+    trackInteraction('navigation_click', 'header_navigation', sectionId);
   };
 
   return (
