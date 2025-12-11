@@ -6,24 +6,24 @@ This is a modern, interactive web application dedicated to promoting environment
 
 ## Key Features
 
-- **Hero Section**: Visually appealing presentation with representative images for environmental activities
-- **Activities**: Detailed information about community clean-up events and recycling programs
-- **Resources**: Guides and useful materials for recycling and waste reduction
-- **Practical Tips**: Recommendations for a sustainable lifestyle
-- **Photo Gallery**: Collection of images from previous events for inspiration
-- **Educational Videos**: Multimedia content for interactive learning
-- **Informative Footer**: Links to partner organizations and contact information
+- 🌟 **Hero Section**: Visually appealing presentation with representative images for environmental activities
+- 🧹 **Activities**: Detailed information about community clean-up events and recycling programs
+- 📚 **Resources**: Guides and useful materials for recycling and waste reduction
+- 💡 **Practical Tips**: Recommendations for a sustainable lifestyle
+- 📸 **Photo Gallery**: Collection of images from previous events for inspiration
+- 🎥 **Educational Videos**: Multimedia content for interactive learning
+- ℹ️ **Informative Footer**: Links to partner organizations and contact information
 
 ## Technology Stack
 
 The project is built using cutting-edge web technologies:
 
-- **Vite**: Fast bundler for application development and build processes
-- **React**: JavaScript framework for creating dynamic user interfaces
-- **TypeScript**: JavaScript superset for static typing and safer development
-- **Tailwind CSS**: Utility-first CSS framework for rapid, responsive styling
-- **shadcn/ui**: Accessible and customizable UI components
-- **ESLint**: For ensuring code quality and consistency
+- ⚡ **Vite**: Fast bundler for application development and build processes
+- ⚛️ **React**: JavaScript framework for creating dynamic user interfaces
+- 📝 **TypeScript**: JavaScript superset for static typing and safer development
+- 🎨 **Tailwind CSS**: Utility-first CSS framework for rapid, responsive styling
+- 🧩 **shadcn/ui**: Accessible and customizable UI components
+- 🔍 **ESLint**: For ensuring code quality and consistency
 
 ## Local Installation and Development
 
@@ -105,18 +105,18 @@ The application uses Google Analytics for tracking user interactions. The tracki
 
 ## Performance Optimization
 
-- **Lazy Loading**: Components are loaded on-demand to improve initial load times
-- **Image Optimization**: Images are optimized for web delivery
-- **Code Splitting**: Application code is split into chunks for better caching
-- **Minification**: Production builds include minified CSS and JavaScript
+- 🐌 **Lazy Loading**: Components are loaded on-demand to improve initial load times
+- 🖼️ **Image Optimization**: Images are optimized for web delivery
+- ✂️ **Code Splitting**: Application code is split into chunks for better caching
+- 📦 **Minification**: Production builds include minified CSS and JavaScript
 
 ## Browser Support
 
 The application supports all modern browsers:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- 🌐 Chrome (latest)
+- 🦊 Firefox (latest)
+- 🍎 Safari (latest)
+- 🔷 Edge (latest)
 
 ## License
 
