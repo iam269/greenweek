@@ -1,4 +1,4 @@
-# Green Week - Săptămâna Verde
+# Green Week 
 
 ![Green Week Logo](public/greenweek.png)
 
