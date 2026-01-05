@@ -1,5 +1,7 @@
 # Green Week - Săptămâna Verde
 
+![Green Week Logo](public/greenweek.png)
+
 This is a modern, interactive web application dedicated to promoting environmental activities and community clean-up initiatives during Green Week. The project represents a digital initiative for raising public awareness about environmental issues, providing educational resources, information about local events, and tools for active involvement in protecting the surrounding environment.
 
 **Live URL**: https://iam269.github.io/greenweek/
